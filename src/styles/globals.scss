@@ -13,6 +13,12 @@ body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   font-family: 'Roboto';
+  background: rgb(153, 0, 153);
+  background: linear-gradient(
+    90deg,
+    rgba(153, 0, 153, 1) 31%,
+    rgba(201, 72, 201, 1) 100%
+  );
 }
 
 img,
@@ -44,4 +50,23 @@ h6 {
 #root,
 #__next {
   isolation: isolate;
+}
+
+.MuiOutlinedInput-notchedOutline {
+  display: none;
+}
+
+.MuiSelect-outlined {
+  border: 1px solid gray !important;
+}
+
+.MuiFilledInput-input {
+  border: 1px solid gray !important;
+  background: #fff;
+  border-radius: 4px;
+}
+
+.MuiOutlinedInput-input {
+  display: flex;
+  justify-content: space-between;
 }
