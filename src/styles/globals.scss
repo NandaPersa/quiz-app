@@ -1,3 +1,11 @@
+:root {
+  --primary-strong: #3f23cc;
+  --primary-base: #6348e3;
+  --color-neutral-softer: #fafafe;
+  --color-neutral-softest: #ffffff;
+  --color-neutral-soft: #e0e2e4;
+}
+
 *,
 *::before,
 *::after {
@@ -13,19 +21,13 @@ body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   font-family: 'Roboto';
-  background: rgb(153, 0, 153);
-  background: linear-gradient(
-    90deg,
-    rgba(153, 0, 153, 1) 31%,
-    rgba(201, 72, 201, 1) 100%
-  );
+  background: var(--primary-base);
 }
 
 img,
 picture,
 video,
-canvas,
-svg {
+canvas {
   display: block;
   max-width: 100%;
 }
@@ -57,13 +59,21 @@ h6 {
 }
 
 .MuiSelect-outlined {
-  border: 1px solid gray !important;
+  border: 1px solid var(--color-neutral-soft) !important;
 }
 
-.MuiFilledInput-input {
-  border: 1px solid gray !important;
-  background: #fff;
+.MuiSelect-select {
+  background: var(--color-neutral-softest);
+}
+
+.MuiOutlinedInput-input {
+  border: 1px solid var(--color-neutral-soft) !important;
+  background: var(--color-neutral-softest);
   border-radius: 4px;
+
+  &::placeholder {
+    color: #999 !important;
+  }
 }
 
 .MuiOutlinedInput-input {
