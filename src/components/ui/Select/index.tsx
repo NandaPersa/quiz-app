@@ -9,8 +9,9 @@ const SelectInput: React.FC = () => {
       <Select
         labelId="demo-simple-select-filled-label"
         id="demo-simple-select-filled"
-        value={10}
+        placeholder="Selecione uma categoria"
         fullWidth
+        size="small"
       >
         <MenuItem value="">
           <em>None</em>
