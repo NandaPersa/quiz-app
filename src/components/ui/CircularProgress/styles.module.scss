@@ -1,0 +1,44 @@
+.boxProgressCircle {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.boxProgress {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 105px;
+  height: 105px;
+  border-radius: 100%;
+  background-color: var(--primary-base);
+
+  box-shadow: -2px 4px 12px 4px rgba(0, 0, 0, 0.26);
+  -webkit-box-shadow: -2px 4px 12px 4px rgba(0, 0, 0, 0.26);
+  -moz-box-shadow: -2px 4px 12px 4px rgba(0, 0, 0, 0.26);
+
+  p {
+    color: var(--color-neutral-softer);
+    font-weight: 700;
+    font-size: 16px;
+  }
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  top: auto;
+  left: auto;
+  bottom: auto;
+  right: auto;
+
+  color: var(--color-neutral-softer) !important;
+
+  position: absolute;
+  z-index: 2;
+}
