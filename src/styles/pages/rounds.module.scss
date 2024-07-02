@@ -1,0 +1,34 @@
+.title {
+  margin-bottom: 100px;
+  color: var(--color-neutral-softer);
+  font-size: 48px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+
+  margin-bottom: 16px;
+}
+
+.button {
+  background-color: var(--primary-base) !important;
+  color: var(--color-neutral-softest) !important;
+  width: 100% !important;
+
+  &:hover {
+    background-color: var(--primary-strong) !important;
+  }
+}
+
+.buttonsSection {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+
+  margin-top: 32px;
+}
