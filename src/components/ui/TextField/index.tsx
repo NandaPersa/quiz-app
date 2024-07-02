@@ -11,9 +11,10 @@ const TextFieldInput: React.FC = () => {
       <TextField
         hiddenLabel
         id="filled-hidden-label-small"
-        defaultValue="Nome"
-        variant="filled"
+        placeholder="Nome"
+        variant="outlined"
         fullWidth
+        size="small"
       />
     </div>
   );
