@@ -1,12 +1,17 @@
 import React from 'react';
 import styles from './styles.module.scss';
+import { Box } from '@mui/material';
 
 interface Props {
   children: React.ReactNode;
 }
 
-const Box = ({ children }: Props) => {
-  return <div className={styles.boxContainer}>{children}</div>;
+const BoxComponent = ({ children }: Props) => {
+  return (
+    <Box component="section" className={styles.boxContainer}>
+      {children}
+    </Box>
+  );
 };
 
-export default Box;
+export default BoxComponent;
