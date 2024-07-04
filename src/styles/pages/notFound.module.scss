@@ -1,0 +1,20 @@
+.notFound {
+  font-size: 140px;
+  margin-top: 20px;
+  color: var(--color-neutral-softer);
+}
+
+.text {
+  color: var(--color-neutral-softer);
+}
+
+.button {
+  background-color: var(--color-neutral-softest) !important;
+  margin-top: 32px !important;
+  color: var(--primary-base) !important;
+  width: 200px !important;
+
+  &:hover {
+    background-color: var(--color-neutral-soft) !important;
+  }
+}
