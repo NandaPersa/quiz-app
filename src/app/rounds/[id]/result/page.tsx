@@ -64,7 +64,7 @@ export default function Result({ params }: Props) {
           value={progressValue}
           variant={loading ? 'indeterminate' : 'determinate'}
         />
-        {result?.round.total_correct_answers && (
+        {result?.round.total_correct_answers !== undefined && (
           <Rating
             name="half-rating-read"
             precision={1}
