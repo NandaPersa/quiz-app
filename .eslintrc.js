@@ -38,13 +38,7 @@ module.exports = {
         default: 'array',
       },
     ],
-    '@typescript-eslint/consistent-type-assertions': [
-      'warn',
-      {
-        assertionStyle: 'as',
-        objectLiteralTypeAssertions: 'never',
-      },
-    ],
+    '@typescript-eslint/consistent-type-assertions': 'off',
     // React rules
     'react/jsx-fragments': ['warn', 'syntax'], // Shorthand syntax for React fragments
     'react/jsx-filename-extension': [
@@ -58,6 +52,14 @@ module.exports = {
     'react/react-in-jsx-scope': 'off',
     'react/prop-types': 'off',
     'prettier/prettier': 'warn',
+    '@typescript-eslint/no-unused-vars': [
+      'error', // or "error"
+      {
+        argsIgnorePattern: '^_',
+        varsIgnorePattern: '^_',
+        caughtErrorsIgnorePattern: '^_',
+      },
+    ],
   },
   settings: {
     react: {
