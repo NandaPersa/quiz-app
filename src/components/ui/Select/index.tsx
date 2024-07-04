@@ -44,7 +44,7 @@ const SelectInput = ({
               <MenuItem value="none">
                 <em className={styles.placeholder}>Selecione uma categoria</em>
               </MenuItem>
-              {categories.map((category) => (
+              {categories?.map((category) => (
                 <MenuItem key={category.id} value={category.id}>
                   {category.name}
                 </MenuItem>
