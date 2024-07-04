@@ -5,6 +5,7 @@ import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
 import RecoilContextProvider from '@/contexts/RecoilContextProvider';
+import { Toaster } from 'react-hot-toast';
 
 export const metadata: Metadata = {
   title: 'Quiz App',
@@ -20,6 +21,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <RecoilContextProvider>{children}</RecoilContextProvider>
+        <Toaster />
       </body>
     </html>
   );
