@@ -5,19 +5,33 @@ import CircularProgress, {
 import Box from '@mui/material/Box';
 import styles from './styles.module.scss';
 
-export function CircularProgressWithLabel(
-  props: CircularProgressProps & { value: number },
-) {
+interface Props extends CircularProgressProps {
+  correctQuestions: number;
+  totalQuestions: number;
+  value: number;
+  variant: 'determinate' | 'indeterminate';
+}
+
+export function CircularProgressWithLabel({
+  correctQuestions,
+  totalQuestions,
+  variant,
+  ...props
+}: Props) {
   return (
     <Box className={styles.boxProgressCircle}>
       <CircularProgress
         className={styles.circle}
-        variant="determinate"
+        variant={variant}
         size="70"
         {...props}
       />
       <Box className={styles.boxProgress}>
-        <p>{`2/5`}</p>
+        {variant === 'determinate' && (
+          <p>
+            {correctQuestions} / {totalQuestions}
+          </p>
+        )}
       </Box>
     </Box>
   );
